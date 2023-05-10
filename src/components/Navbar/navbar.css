@@ -1,0 +1,28 @@
+#navbar{
+    height: 3rem;
+    background-color: rgb(194, 37, 37);
+    display: flex;
+    align-items: center;
+}
+.navbarButton{
+    height:1.5rem;
+    width:1.5rem;
+    padding:1rem;
+    border-radius: 3px;
+}
+.navbarButton:hover{
+    cursor:pointer;
+    background-color: rgba(255, 255, 255, 0.205) !important;
+}
+#homeButton{
+    background: url(../../assets/home.svg) no-repeat center;
+    background-size:calc(100% - 10px);
+}
+#sidebarButton{
+    background: url(../../assets/menu.svg) no-repeat center;
+    background-size:calc(100% - 10px);
+}
+#plusButton{
+    background: url(../../assets/plus.svg) no-repeat center;
+    background-size:calc(100% - 10px);
+}
