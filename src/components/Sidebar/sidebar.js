@@ -16,6 +16,7 @@ const Sidebar = () => {
 
   const inboxSpan = SpanWithIcon({
     Id: "inboxSpan",
+    spanDivClass: "spanDiv",
     Class: "sidebarSpan",
     Text: "Inbox",
     Icon: Icon("mailIcon", "sidebarIcon", mail),
@@ -26,6 +27,7 @@ const Sidebar = () => {
 
   const todaySpan = SpanWithIcon({
     Id: "todaySpan",
+    spanDivClass: "spanDiv",
     Class: "sidebarSpan",
     Text: "Today",
     Icon: Icon("calendarIcon", "sidebarIcon", calendar),
@@ -35,6 +37,7 @@ const Sidebar = () => {
   });
   const upcomingSpan = SpanWithIcon({
     Id: "upcomingSpan",
+    spanDivClass: "spanDiv",
     Class: "sidebarSpan",
     Text: "Upcoming",
     Icon: Icon("calendarnextIcon", "sidebarIcon", calendarNext),
@@ -52,11 +55,12 @@ const Sidebar = () => {
 
   const projectExample = SpanWithIcon({
     Id: "projectExample",
+    spanDivClass: "spanDiv",
     Class: "sidebarSpan",
     Text: "My Things",
     Icon: Icon("Icon", "sidebarIcon", lightSkin),
     onClick: () => {
-      console.log("idkman");
+      window.location.hash = "/mythings";
     },
   });
   projectsWrapper.append(projectExample);

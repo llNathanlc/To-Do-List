@@ -3,6 +3,7 @@ import Sidebar from "./components/Sidebar/sidebar.js";
 import Display from "./components/Display/display.js";
 import Router from "./router.js";
 import "./index.css";
+import "./components/Elements/elements.css"
 
 function App() {
   const content = document.getElementById("content");

@@ -1,16 +1,23 @@
 const Span = ({ Id, Class, Text, onClick }) => {
+  const spanDiv = document.createElement("div");
+  spanDiv.classList.add("spanDiv");
+  spanDiv.id = "projectSpan";
+
   const span = document.createElement("span");
   span.id = Id;
   span.classList.add(Class);
   span.textContent = Text;
-  span.addEventListener("pointerdown", onClick);
+  spanDiv.addEventListener("pointerdown", onClick);
 
-  return span;
+  spanDiv.append(span);
+
+  return spanDiv;
 };
 
-const SpanWithIcon = ({ Id, Class, Text, Icon, onClick }) => {
+const SpanWithIcon = ({ Id,spanDivId, spanDivClass, Class, Text, Icon, onClick }) => {
   const spanDiv = document.createElement("div");
-  spanDiv.classList.add("spanDiv");
+  spanDiv.classList = spanDivClass;
+  spanDiv.id = spanDivId;
 
   const icon = Icon;
 

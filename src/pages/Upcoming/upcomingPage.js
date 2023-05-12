@@ -1,8 +1,9 @@
 import "./upcomingPage.css";
 
-const UpcomingPage =() =>{
+const UpcomingPage =(Id,Class) =>{
     const upcomingPage = document.createElement("div");
-    upcomingPage.id = "upcomingPage";
+    upcomingPage.id = Id;
+    upcomingPage.classList.add(Class);
 
     const element = document.createElement("div");
     element.textContent="upcoming";

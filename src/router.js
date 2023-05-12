@@ -2,15 +2,15 @@ import TodayPage from "./pages/Today/todayPage";
 import InboxPage from "./pages/Inbox/inboxPage";
 import UpcomingPage from "./pages/Upcoming/upcomingPage";
 import ProjectsPage from "./pages/Projects/projectsPage";
-
+import mythingsPage from "./pages/ExampleProject/mythingsPage";
 
 const routes = {
-  "#/today": TodayPage(),
-  "#/inbox": InboxPage(),
-  "#/upcoming": UpcomingPage(),
-  "#/projects": ProjectsPage()
+  "#/today": TodayPage("todayPage", "page"),
+  "#/inbox": InboxPage("inboxPage", "page"),
+  "#/upcoming": UpcomingPage("upcomingPage", "page"),
+  "#/projects": ProjectsPage("projectsPage", "page"),
+  "#/mythings": mythingsPage("mythingsPage","page"),
 };
-
 const Router = () => {
   const display = document.getElementById("display");
   const route = routes[window.location.hash];

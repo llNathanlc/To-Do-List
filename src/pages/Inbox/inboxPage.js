@@ -1,8 +1,9 @@
 import "./inboxPage.css";
 
-const InboxPage =() =>{
+const InboxPage =(Id, Class) =>{
     const inboxPage = document.createElement("div");
-    inboxPage.id = "inboxPage";
+    inboxPage.id = Id;
+    inboxPage.classList.add(Class);
 
     const element = document.createElement("div");
     element.textContent="inbox";

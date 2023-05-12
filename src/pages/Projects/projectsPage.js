@@ -1,8 +1,9 @@
 import "./projectsPage.css";
 
-const ProjectsPage =() =>{
+const ProjectsPage =(Id,Class) =>{
     const projectsPage = document.createElement("div");
-    projectsPage.id = "projectsPage";
+    projectsPage.id = Id;
+    projectsPage.classList.add(Class);
 
     const element = document.createElement("div");
     element.textContent="projects";
