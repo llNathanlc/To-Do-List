@@ -1,0 +1,5 @@
+#display{
+    height:100%;
+    width:100%;
+    grid-area: 2 / 2 / 3 / 3;
+}

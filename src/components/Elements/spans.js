@@ -1,5 +1,3 @@
-
-
 const Span = ({ Id, Class, Text, onClick }) => {
   const span = document.createElement("span");
   span.id = Id;
